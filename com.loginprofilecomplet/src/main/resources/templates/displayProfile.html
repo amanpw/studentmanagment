@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Display Profile Data</title>
+</head>
+<body>
+
+     <h1>Profile Data :</h1>
+     
+     <div>
+     
+     <p> <span>Name:</span> <span th:text="${profile.name}"></span>   </p>
+     
+     <p> <span>Date of Birth:</span> <span th:text="${profile.dob}"></span>   </p>
+     <p> <span>Gender:</span> <span th:text="${profile.gender}"></span>   </p>
+     <p> <span>City:</span> <span th:text="${profile.city}"></span>   </p>
+     <p> <span>Id:</span> <span th:text="${profile.id}"></span>   </p>
+     
+   <img th:src=" 'data:image/jpeg;base64,' + ${profile.photoBase64}" 
+        alt="Profile Photo" />
+        <p th:if="${!profile.photoBase64}">No photo available</p>
+     </div>
+</body>
+</html>

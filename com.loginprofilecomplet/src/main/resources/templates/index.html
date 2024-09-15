@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+      <div class="continer">
+      
+      <form action="/create" method="post" enctype="multipart/form-data">
+      <label>name:</label>
+      <input type="text" placeholder="Enter name" name="name" required="required">
+       <br><br>  
+       
+       <label>DOB:</label>
+      <input type="date" placeholder="Enter dob" name="dob" required="required">
+       <br><br>  
+       
+       <label>Gender:</label>
+      <input type="radio" placeholder="Enter Gender" name="gender" value="male" required="required"> Male
+       <input type="radio" placeholder="Enter Gender" name="gender" value="female" required="required"> Female
+        <input type="radio" placeholder="Enter Gender" name="gender" value="other" required="required"> Other
+       <br><br>  
+       
+       <label>City:</label>
+      <input type="text" placeholder="Enter City" name="city" required="required">
+       <br><br>  
+       
+       <label>Photo:</label>
+      <input type="file"  name="photo" accept="image/*" / >
+       <br><br>  
+       
+       <input type="submit" value="create-Profile">    
+      </form>
+      </div>
+</body>
+</html>
